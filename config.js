@@ -19,14 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.style.backgroundRepeat = "no-repeat";
 
   // ✅ SET PROFILE (FIX)
-  const profile = document.querySelector(".profile");
-  if (profile) {
-    profile.src = CONFIG.profileImage;
-  }
+  function safeRedirect(url) {
+  setTimeout(() => {
+    window.location.href = url;
+  }, 800); // delay 0.8 detik
+}
 
-  // ✅ SET BUTTON
-  document.getElementById("waBtn").href = CONFIG.whatsapp;
-  document.getElementById("fbBtn").href = CONFIG.facebook;
-  document.getElementById("tgBtn").href = CONFIG.telegram;
-
+document.getElementById("waBtn").onclick = () => safeRedirect(CONFIG.whatsapp);
+document.getElementById("fbBtn").onclick = () => safeRedirect(CONFIG.facebook);
+document.getElementById("tgBtn").onclick = () => safeRedirect(CONFIG.telegram);
 });
