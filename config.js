@@ -5,9 +5,9 @@ const CONFIG = {
   // BACKGROUND (WAJIB pakai format url())
   backgroundImage: "https://i.imgur.com/q6TSLfn.jpeg",
 
-  whatsapp: "https://wa.me/628123456789",
-  facebook: "https://facebook.com",
-  telegram: "https://t.me/username"
+  whatsapp: "https://tapthelink.cfd/mwmGC",
+  facebook: "https://tapthelink.cfd/mwmGC",
+  telegram: "https://tapthelink.cfd/mwmGC"
 };
 
 document.addEventListener("DOMContentLoaded", function () {
