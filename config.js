@@ -1,14 +1,32 @@
 const CONFIG = {
-  profileImage: "https://i.imgur.com/qi54k8e.jpeg", // GANTI FOTO
-  whatsapp: "https://tapthelink.cfd/mwmGC",
-  facebook: "https://tapthelink.cfd/mwmGC",
-  telegram: "https://tapthelink.cfd/mwmGC"
+  // FOTO PROFIL (WAJIB direct link gambar)
+  profileImage: "https://i.imgur.com/6VBx3io.jpg",
+
+  // BACKGROUND (WAJIB pakai format url())
+  backgroundImage: "https://i.imgur.com/3ZQ3Z6F.jpg",
+
+  whatsapp: "https://wa.me/628123456789",
+  facebook: "https://facebook.com",
+  telegram: "https://t.me/username"
 };
 
-// SET PROFILE
-document.querySelector(".profile").src = CONFIG.profileImage;
+document.addEventListener("DOMContentLoaded", function () {
 
-// SET BUTTON LINKS
-document.getElementById("waBtn").href = CONFIG.whatsapp;
-document.getElementById("fbBtn").href = CONFIG.facebook;
-document.getElementById("tgBtn").href = CONFIG.telegram;
+  // ✅ SET BACKGROUND (FIX)
+  document.body.style.backgroundImage = `url('${CONFIG.backgroundImage}')`;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "no-repeat";
+
+  // ✅ SET PROFILE (FIX)
+  const profile = document.querySelector(".profile");
+  if (profile) {
+    profile.src = CONFIG.profileImage;
+  }
+
+  // ✅ SET BUTTON
+  document.getElementById("waBtn").href = CONFIG.whatsapp;
+  document.getElementById("fbBtn").href = CONFIG.facebook;
+  document.getElementById("tgBtn").href = CONFIG.telegram;
+
+});
