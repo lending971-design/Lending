@@ -3,7 +3,7 @@ const CONFIG = {
   profileImage: "https://i.imgur.com/z0kOssK.jpeg",
 
   // BACKGROUND (WAJIB pakai format url())
-  backgroundImage: "https://i.imgur.com/3ZQ3Z6F.jpg",
+  backgroundImage: "https://i.imgur.com/q6TSLfn.jpeg",
 
   whatsapp: "https://wa.me/628123456789",
   facebook: "https://facebook.com",
