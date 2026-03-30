@@ -1,6 +1,6 @@
 const CONFIG = {
   // FOTO PROFIL (WAJIB direct link gambar)
-  profileImage: "https://i.imgur.com/6VBx3io.jpg",
+  profileImage: "https://i.imgur.com/z0kOssK.jpeg",
 
   // BACKGROUND (WAJIB pakai format url())
   backgroundImage: "https://i.imgur.com/3ZQ3Z6F.jpg",
